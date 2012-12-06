@@ -1,0 +1,20 @@
+{
+	"name": "konstantin-kuklin/yandex-metrika",
+	"type": "symfony-bundle",
+	"description": "Yandex Metrika extensions for your Symfony2 project.",
+	"keywords": ["symfony2", "yandex", "metrika", "yandex metrika"],
+	"homepage": "https://github.com/KonstantinKuklin/YandexMetrikaBundle",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Konstantin Kuklin",
+			"email": "konstantin.kuklin@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-0": {
+			"KonstantinKuklin\\Bundle\\YandexMetrikaBundle": ""
+		}
+	},
+	"target-dir": "KonstantinKuklin/Bundle/YandexMetrikaBundle"
+}
