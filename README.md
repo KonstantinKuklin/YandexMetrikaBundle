@@ -2,21 +2,35 @@
 
 Bundle для простой установки счетчика метрики.
 
-## Installation 2.0
+## Установка для Symfony 2.0
 
-### deps
+### Файл deps
 
-    git submodule add git@github.com:antimattr/GoogleBundle.git src/AntiMattr/GoogleBundle
+    [YandexMetrikaBundle]
+        git=git://github.com/KonstantinKuklin/YandexMetrikaBundle
+        target=/bundles/KonstantinKuklin/Bundle/YandexMetrikaBundle
 
-### Application Kernel
+### Файл autoload.php
 
-Add GoogleBundle to the `registerBundles()` method of your application kernel:
+    'KonstantinKuklin'                          => __DIR__.'/../vendor/bundles',
 
-    public function registerBundles()
-    {
-        return array(
-            new AntiMattr\GoogleBundle\GoogleBundle(),
-        );
-    }
+### Файл AppKernel.php
 
-## Configuration
+Добавьте YandexMetrikaBundle() в тело метода `registerBundles()`:
+
+    new KonstantinKuklin\Bundle\YandexMetrikaBundle\YandexMetrikaBundle(),
+
+## Полный app/config.yml
+
+    yandex_metrika:
+        id:                  123123123 # Ваш ID
+        webvisor:            false # Вебвизор
+        clickmap:            true # Карта вкликов
+        trackLinks:          true # Внешние ссылки, загрузки файлов и отчет по кнопке поделиться
+        accurateTrackBounce: true # Точный показатель отказов
+        trackHash:           true # Отслеживание хеша в адресной строке
+
+## Необходимый минимум app/config.yml
+
+    yandex_metrika:
+        id:                  123123123 # Ваш ID
