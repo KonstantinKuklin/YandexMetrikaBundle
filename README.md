@@ -20,6 +20,12 @@ Bundle для простой установки счетчика метрики.
 
     new KonstantinKuklin\Bundle\YandexMetrikaBundle\YandexMetrikaBundle(),
 
+## Установка для Symfony 2.1
+    php composer.phar require konstantin-kuklin/yandex-metrika --no-update
+
+## Шаблон
+
+Для отображения кода метрики в нужном месте вставьте `{{ yandex_metrika_init() }}`
 ## Полный app/config.yml
 
     yandex_metrika:
