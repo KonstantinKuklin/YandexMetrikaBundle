@@ -1,6 +1,6 @@
 # YandexMetrikaBundle
 
-Bundle для простой установки счетчика метрики.
+Yandex Metrika Bundle для простой установки счетчика метрики.
 
 ## Установка для Symfony 2.0
 
